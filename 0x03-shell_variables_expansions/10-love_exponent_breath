@@ -1,2 +1,2 @@
 #!/bin/bash
-echol $((BREATH**LOVE))
+echo $((BREATH**LOVE))
