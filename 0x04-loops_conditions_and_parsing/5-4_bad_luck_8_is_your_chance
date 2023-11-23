@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#This script displays badluck, goodluck and best school at specifies lines
+a=1
+while [ $a -le 10 ]; do
+	if [ $a -eq 4 ]; then
+		echo "bad luck"
+	elif [ $a -eq 8 ]; then
+		echo "good luck"
+	else
+		echo "Best school"
+		a=$((a+1))
+	fi;
+done;
