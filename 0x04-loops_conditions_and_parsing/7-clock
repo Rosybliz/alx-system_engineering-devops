@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #This prints the minutes and hours up till the 12th hour
 hour=0
-min=1
 while [ $hour -le 12 ]; do
 	echo "Hour: $hour"
+	min=1
 	while [ $min -lt 60 ]; do
 		echo $min
 		min=$((min+1))
