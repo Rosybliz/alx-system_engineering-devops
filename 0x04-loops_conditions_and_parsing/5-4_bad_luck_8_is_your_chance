@@ -8,6 +8,6 @@ while [ $a -le 10 ]; do
 		echo "good luck"
 	else
 		echo "Best school"
-		a=$((a+1))
-	fi;
+	fi
+	a=$((a+1))
 done;
