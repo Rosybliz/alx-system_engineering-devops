@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # Displays the content of the current directory in a list format
-for filename in *; do
-    if [[ $filename != *.* ]]; then
-        basename_without_extension="${filename##*-}"
-        echo "$basename_without_extension"
-    fi
-done
+LIST="$(ls -1)"
+
+for filename in $LIST;do
+	echo "$filename" | cut -d "-" -f 2
+done;
