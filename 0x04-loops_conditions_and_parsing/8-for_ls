@@ -1,11 +1,8 @@
 #!/usr/bin/env bash
-# Displays:
-#+ The content of the current directory
-#+ In a list format
-#+ Where only the part of the name after the first dash is
-#+ displayed (refer to the example)
-LIST="$(ls -1)"
-
-for filename in $LIST;do
-	echo "$filename" | cut -d "-" -f 2
-done;
+# Displays the content of the current directory in a list format
+for filename in *; do
+    if [[ $filename != *.* ]]; then
+        basename_without_extension="${filename##*-}"
+        echo "$basename_without_extension"
+    fi
+done
